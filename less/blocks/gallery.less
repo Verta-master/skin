@@ -9,7 +9,6 @@
 
 .gallery__aside {
   width: 240px;
-  height: 240px;
 }
 
 .gallery__middle {
@@ -20,10 +19,14 @@
 .gallery__link {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  &--big {
+    height: 100%;
+  }
   
   &::after {
     content: "";
