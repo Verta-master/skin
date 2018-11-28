@@ -11,6 +11,28 @@ body {
   min-height: 100vh;
 }
 
+.main {
+  position: relative;
+  
+  &::before {
+    display: none;
+    content: "";
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  &--overlay {
+    &::before {
+      display: block;
+    }
+  }
+}
+
 .footer {
   margin-top: auto;
 }

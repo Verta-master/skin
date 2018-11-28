@@ -27,10 +27,6 @@
     padding-bottom: 100px;
   }
   .promo__title {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 220px;
     font-size: 34px;
   }
   .promo__label {
@@ -72,5 +68,48 @@
   .sale__title {
     font-size: 34px;
     line-height: 1.8;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo__wrap {
+    padding-top: 150px;
+  }
+  .sale__title,
+  .promo__title {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .gallery__aside {
+    display: block;
+  }
+  .footer__column,
+  .gallery__link {
+    width: 100%;
+  }
+  .gallery__middle {
+    height: 240px;
+  }
+  .footer__links a,
+  .footer__line,
+  .footer__wrap {
+    display: block;
+  }
+  .social,
+  .footer__column {
+    margin-bottom: 20px;
+  }
+  .footer__top {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
