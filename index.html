@@ -208,7 +208,7 @@
       </div>
     </section>
     
-    <section class="sale" style="background-image: url(img/bg-parallax.gif)">
+    <section class="sale paroller" data-paroller-factor="0.3" data-paroller-type="background" data-paroller-direction="vertical" style="background-image: url(img/bg-parallax.gif)">
       <div class="wrapper">
         <p class="sale__title">2018 new product launch commemorative SALE</p>
         <p class="sale__dates">05/08 - 05/31</p>
@@ -271,6 +271,7 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jquery.paroller.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
 
   <!-- Sliders -->
@@ -288,6 +289,11 @@
       preventClicks: false,
       preventClicksPropagation: false,
     });
+  </script>
+  
+  <!-- Parallax effect -->
+  <script>
+    $('.paroller').paroller();
   </script>
 </body>
 </html>
