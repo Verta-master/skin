@@ -15,7 +15,6 @@
         <img src="img/logo.jpg" alt="Logo" width="480" height="167">
       </a>
       <nav class="menu">
-        <button type="button" class="menu__btn"></button>
         <ul class="menu__list">
           <li class="menu__item menu__item--active">
             <a href="#" class="menu__link">About</a>
@@ -70,8 +69,61 @@
       </div>
     </div>
   </header>
+  <nav class="mobile">
+    <button type="button" class="mobile__btn"></button>
+    <button type="button" class="mobile__close"></button>
+    <div class="mobile__links">
+      <a href="#" class="mobile__link">Login</a>
+      <a href="#" class="mobile__link">Join</a>
+      <a href="#" class="mobile__link">Cart</a>
+      <a href="#" class="mobile__link">Order</a>
+    </div>
+    <form action="#" class="mobile__search">
+      <input type="text" class="mobile__input">
+      <button type="submit" class="mobile__search-btn"></button>
+    </form>
+
+    <input type="radio" id="radio1" name="radio" class="mobile__radio" checked>
+    <input type="radio" id="radio2" name="radio" class="mobile__radio">
+    <div class="mobile__tabs">
+      <label for="radio1" class="mobile__label mobile__label--1">Shop</label>
+      <label for="radio2" class="mobile__label mobile__label--2">Community</label>
+    </div>
+    <div class="mobile__tab" id="tab1">
+      <ul class="mobile__list">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">HAIR CARE</a></li>
+        <li>
+          <a href="#">COSMETICS</a>
+          <button type="button" class="mobile__down"></button>
+          <ul class="mobile__sublist">
+            <li><a href="#">MOISTURIZING</a></li>
+            <li><a href="#">RENEWAL</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile__tab" id="tab2">
+      <ul class="mobile__list">
+        <li><a href="#">Notice</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Q & A</a></li>
+      </ul>
+    </div>
+
+    <div class="mobile__info">
+      <p class="mobile__title">CS CENTER</p>
+      <p>010-6579-6541<br>
+      02-461-5385<br>
+      11:00 ~ 20:00 Weekdays</p>
+      <p class="mobile__title">BANK ACCOUNT</p>
+      <p>Account holder: MP Keiko Co., Ltd.<br>
+      Kookmin Bank 424001-01-339845<br>
+      Shinhan Bank 140-011-539863</p>
+    </div>
+  </nav>
   
-  <main>
+  <main class="main">
     <section class="catalog wrapper">
       <h1>HAIR CARE</h1>
       <ul class="catalog__list">
