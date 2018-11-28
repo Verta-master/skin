@@ -732,7 +732,7 @@ h1 {
   background-size: 18px 18px;
 }
 .promo__wrap {
-  min-height: 100vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,7 +926,7 @@ h1 {
 }
 .sale {
   margin-bottom: 150px;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 50px;
   color: #fff;
   text-align: center;
@@ -1257,6 +1257,8 @@ span.pages__link {
   width: 70px;
 }
 .card__gallery a {
+  width: 100%;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1267,6 +1269,12 @@ span.pages__link {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
+  overflow: hidden;
+}
+.card__gallery a img {
+  display: block;
+  height: 100%;
+  width: auto;
 }
 .card__title {
   font-size: 16px;
@@ -1284,6 +1292,7 @@ span.pages__link {
   width: 100%;
   margin-bottom: 20px;
   outline: none;
+  background-color: #fff;
 }
 .card__number {
   display: -webkit-box;
@@ -1670,6 +1679,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 40px;
   }
   .sale {
+    padding-top: 70px;
     margin-bottom: 90px;
   }
   .sale__title {
@@ -1779,5 +1789,20 @@ input[type=number]::-webkit-outer-spin-button {
   .card__action {
     width: 50%;
     padding: 12px;
+  }
+  .sale {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 766px) and (orientation: landscape) {
+  .promo__wrap {
+    display: block;
+    height: auto;
+    padding-top: 100px;
+  }
+  .promo__btn {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
