@@ -2,17 +2,20 @@ jQuery(function($) {
 	"use strict";
 
 //Mobile menu
-$('.menu__btn').click(function() {
-  $('.menu').toggleClass('menu--opened');
-  $('.menu__list').slideToggle();
-})
-
-//if (window.innerWidth < 766) {
-//  $('.menu__link').click(function() {
-//    $('.menu__list').slideToggle();
-//    $('.menu').removeClass('menu--opened');
-//  })
-//}
+$('.mobile__down').click(function() {
+  $(this).toggleClass('mobile__down--open');
+  $(this).next().slideToggle();
+});
+  
+$('.mobile__btn').click(function() {
+  $('.mobile').addClass('mobile--slide');
+  $('.main').addClass('main--overlay');
+});
+  
+$('.mobile__close').click(function() {
+  $('.mobile').removeClass('mobile--slide');
+  $('.main').removeClass('main--overlay');
+});
 
 //Scroll to top
 $(window).scroll(function(){
