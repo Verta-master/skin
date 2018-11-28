@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrap wrapper">
+      <a href="index.html" class="logo">
+        <img src="img/logo.jpg" alt="Logo" width="480" height="167">
+      </a>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item menu__item--active">
+            <a href="#" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Hair Care</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Cosmetics</a>
+            <ul class="menu__sublist">
+              <li><a href="#" class="menu__link">Moisturizing</a></li>
+              <li><a href="#" class="menu__link">Renewal</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__block">
+        <a href="#" class="header__link">Notice</a>
+        <a href="#" class="header__link">FAQ</a>
+        <a href="#" class="header__link">Q & A</a>
+        <div class="header__user">
+          <a href="#" class="header__link">
+            <img src="img/icons/member_icon_b.png" alt="Login" width="39" height="39">
+          </a>
+          <ul class="header__list">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">My page</a></li>
+          </ul>
+        </div>
+        <div class="header__user">
+          <a href="#" class="header__link">
+            <img src="img/icons/cart_icon_b.png" alt="Basket" width="39" height="39">
+          </a>
+          <ul class="header__list">
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Basket</a></li>
+            <li><a href="#">Order</a></li>
+          </ul>
+        </div>
+        <div class="header__user">
+          <a href="#" class="header__link">
+            <img src="img/icons/search_icon_b.png" alt="Search" width="39" height="39">
+          </a>
+          <form action="#" method="get" class="search">
+            <div class="search__wrap">
+              <input type="text" class="search__input">
+              <button type="submit" class="search__btn"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="card wrapper">
+      <div class="card__nav">
+        <p class="card__section">HAIR CARE</p>
+        <div class="card__links">
+          <a href="#" class="card__link"><span>&lsaquo;</span> Prev</a>
+          <a href="#" class="card__link">Next <span>&rsaquo;</span></a>
+        </div>
+      </div>
+      <div class="card__wrap">
+        <div class="card__slider">
+          <figure class="card__img">
+            <a href="#"><img src="img/catalog-1.jpg" alt="Shea butter soap"></a>
+          </figure>
+          <div class="card__gallery">
+            <a href="#"><img src="img/catalog-1.jpg" alt="Shea butter soap"></a>
+            <a href="#"><img src="img/slide-1.jpg" alt="Shea butter soap"></a>
+            <a href="#"><img src="img/img-2.jpg" alt="Shea butter soap"></a>
+            <a href="#"><img src="img/catalog-1.jpg" alt="Shea butter soap"></a>
+          </div>
+        </div>
+        <div class="card__info">
+          <form action="#" class="card__form">
+            <p class="card__title">Shea butter soap</p>
+            <p>self-production</p>
+            <p class="card__price">$ 12,00</p>
+            <p>Shea butter soap</p>
+            <select class="card__select">
+              <option value="1">Payment upon order (prepayment)</option>
+              <option value="2">Payment upon receipt (payment)</option>
+            </select>
+            <div class="card__number">
+              <p>Shea butter soap</p>
+              <input type="number" class="card__input" value="1">
+              <div class="card__price">
+                <p>$12,00</p>
+                <p>0</p>
+              </div>
+            </div>
+            <p class="card__total">Total: <b>$9,6</b> (1)</p>
+            <a href="#" class="btn btn--black card__buy">Buy now</a>
+            <div class="card__btns">
+              <a href="#" class="btn card__btn">Add cart</a>
+              <a href="#" class="btn card__btn">Wish list</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="card__tabs">
+        <a href="#product" class="card__tab card__tab--active">Product details</a>
+        <a href="#with" class="card__tab">With item</a>
+        <a href="#review" class="card__tab">Review</a>
+        <a href="#faq" class="card__tab">Q & A</a>
+      </div>
+      <div class="card__product" id="product">
+        <img src="img/product.jpg" alt="" width="600" height="221">
+        <p>No degradation by temperature due to low temperature aging<br>
+          Made to fit the skin type of Korean women<br>
+          Mild characteristics due to long aging period<br>
+          At least 3 months of aging period after production by hand<br>
+          Formation of natural glycerin through saponification process - excellent for moisturizing<br>
+          Artificial fragrance, not hardening agent is used.
+        </p>
+        <p class="card__subtitle"><b>/  How to use  /</b></p>
+        <p>After soaking the water in the soap, take out the foam and gently massage the face and neck with your fingers<br>Rinse thoroughly with lukewarm water.</p>
+        <p class="card__subtitle"><b>/ Main ingredient /</b></p>
+        <p>Shea butter, olive oil, avocado oil, linseed oil, oatmeal powder<br>Pescholi, Cedarwood, Lavender, Grapefruit</p>
+        <p class="card__subtitle"><b>/  Volume  /</b></p>
+        <p>10g</p>
+      </div>
+      
+      <div class="card__tabs">
+        <a href="#product" class="card__tab">Product details</a>
+        <a href="#with" class="card__tab">With item</a>
+        <a href="#review" class="card__tab card__tab--active">Review</a>
+        <a href="#faq" class="card__tab">Q & A</a>
+      </div>
+      <div class="card__review" id="review">
+        <p class="title-2">REVIEW</p>
+        <p class="card__data">There are no posts</p>
+        <div class="card__actions">
+          <a href="#" class="btn btn--black card__action">Late writing</a>
+          <a href="#" class="btn card__action">View all</a>
+        </div>
+      </div>
+      
+      <div class="card__tabs">
+        <a href="#product" class="card__tab">Product details</a>
+        <a href="#with" class="card__tab">With item</a>
+        <a href="#review" class="card__tab">Review</a>
+        <a href="#faq" class="card__tab card__tab--active">Q & A</a>
+      </div>
+      <div class="card__review" id="review">
+        <p class="title-2">Q & A</p>
+        <p class="card__data">There are no posts</p>
+        <div class="card__actions">
+          <a href="#" class="btn btn--black card__action">Contact us</a>
+          <a href="#" class="btn card__action">View all</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="wrapper footer__wrap">
+        <div class="footer__column">
+          <p class="footer__title">SKINOGRAPHY</p>
+          <p>COMPANY: MPKEICO<br>
+            CEO: Kim Seung-ae<br>
+            CPO: MPKEiko <a href="mailto:mpkekko@mpk.kr">mpkekko@mpk.kr</a><br>
+            Headquarters and manufacturing plant: 04781 Seongsu Ilro 4-gil 25, Seongdong-gu, Seoul<br>
+            BUSINESS LICENSE: 885-87-00474<br>
+            ECOMMERCE LICENSE: No. 2017- Seongdong-02726, Seoul
+          </p>
+        </div>
+        <div class="footer__column">
+          <div class="footer__block">
+            <p class="footer__title">CS CENTER</p>
+            <p>TEL: <a href="tel:02-461-5385">02-461-5385</a></p>
+            <p>OPEN: 11:00 ~ 20:00 Weekdays</p>
+          </div>
+          <p class="footer__title">BANK ACCOUNT</p>
+          <p>Account holder: MP Keiko Co., Ltd.</p>
+          <p>Kookmin Bank 424001-01-339845</p>
+          <p>Shinhan Bank 140-011-529863</p>
+        </div>
+        <div class="footer__column">
+          <ul class="social">
+            <li><a href="#"><img src="img/icons/icon-facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="img/icons/icon-instagram.png" alt="Instagram"></a></li>
+          </ul>
+          <p class="footer__title">DELIVERY INFO</p>
+          <p>Shipping View: Courier Link</p>
+          <address>Address: 04781 Sungsu Ilro 4-gil 25, 410, Seongdong-gu, Seoul (Seongsu-dong 2-ga, Seoul Forest Kolon Digital Tower)</address>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper footer__line">
+        <div class="footer__links">
+          <a href="#">Terms of service</a>
+          <a href="#">Privacy Statement</a>
+          <a href="#">Information Use</a>
+        </div>
+        <span>All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+  <button type="button" class="btn-top" title="Top"></button>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
