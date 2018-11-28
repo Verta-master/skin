@@ -1257,7 +1257,15 @@ span.pages__link {
   width: 70px;
 }
 .card__gallery a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 10px;
 }
 .card__title {
@@ -1340,6 +1348,7 @@ input[type=number]::-webkit-outer-spin-button {
   transition: ease-out 0.3s;
 }
 .card__tabs {
+  margin-top: 60px;
   padding: 13px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1355,7 +1364,6 @@ input[type=number]::-webkit-outer-spin-button {
   border-bottom: 1px solid #ddd;
 }
 .card__tab {
-  margin-top: 60px;
   padding: 0 23px;
   font-size: 11px;
   color: #999;
@@ -1668,8 +1676,54 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 34px;
     line-height: 1.8;
   }
+  .card__wrap,
   .mobile {
     display: block;
+  }
+  .catalog__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .catalog__item {
+    margin-right: 0;
+  }
+  .card__info,
+  .card__slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 766px) {
+  .card__img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .card__slider {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card__gallery {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card__gallery a {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 480px) {
@@ -1690,6 +1744,7 @@ input[type=number]::-webkit-outer-spin-button {
   .gallery__aside {
     display: block;
   }
+  .card__info,
   .footer__column,
   .gallery__link {
     width: 100%;
@@ -1709,5 +1764,20 @@ input[type=number]::-webkit-outer-spin-button {
   .footer__top {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .card__tabs {
+    border: 0;
+  }
+  .card__tab:first-child,
+  .card__tab {
+    width: 50%;
+    text-align: center;
+    border-left: 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  .card__action {
+    width: 50%;
+    padding: 12px;
   }
 }
